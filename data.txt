@@ -1,0 +1,57 @@
+C:\Users\xxykz\Desktop\xxykz\development\solana
+
+solana-keygen new --outfile C:\Users\xxykz\Desktop\xxykz\development\solana\Owner.json
+solana-keygen new --outfile C:\Users\xxykz\Desktop\xxykz\development\solana\Creator.json
+
+
+PS C:\Users\xxykz\Desktop\xxykz\development\solana> solana-keygen new --outfile C:\Users\xxykz\Desktop\xxykz\development\solana\Owner.json
+Generating a new keypair
+
+For added security, enter a BIP39 passphrase
+
+NOTE! This passphrase improves security of the recovery seed phrase NOT the
+keypair file itself, which is stored as insecure plain text
+
+BIP39 Passphrase (empty for none):
+
+Wrote new keypair to C:\Users\xxykz\Desktop\xxykz\development\solana\Owner.json
+========================================================================
+pubkey: ByBzm6ENfMJYjzSLbocjAHvQUBZesw5ztEZG15nEJn8F
+========================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+main flag reveal ski wild snack chaos black portion also option ordinary
+========================================================================
+
+
+PS C:\Users\xxykz\Desktop\xxykz\development\solana> solana-keygen new --outfile C:\Users\xxykz\Desktop\xxykz\development\solana\Creator.json
+Generating a new keypair
+
+For added security, enter a BIP39 passphrase
+
+NOTE! This passphrase improves security of the recovery seed phrase NOT the
+keypair file itself, which is stored as insecure plain text
+
+BIP39 Passphrase (empty for none):
+
+Wrote new keypair to C:\Users\xxykz\Desktop\xxykz\development\solana\Creator.json
+=================================================================================
+pubkey: G9igrgtDkSTjGGP5byEPIXqcRhuEXFF7uTM9kgmkRoLuUw
+=================================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:     
+dawn fabric diary raw surprise define option uniform emotion forget drama isolate
+=================================================================================
+
+solana config set --keypair C:\Users\xxykz\Desktop\xxykz\development\solana\Owner.json
+solana config set --url https://metaplex.devnet.rpcpool.com
+solana config get
+
+owner
+solana airdrop 2 ByBzm6ENfMJYjzSLbocjAHvQUBZesw5ztEZG15nEJn8F --url https://api.devnet.solana.com
+creator
+solana airdrop 2 G9igrgtDkSTjGGP5byEPIXqcRhuEXFF7uTM9kgmkRoLuUw --url https://api.devnet.solana.com
+
+
+testData
+https://docs.metaplex.com/programs/candy-machine/how-to-guides/my-first-candy-machine-part1
+Invoke-WebRequest -Uri https://docs.metaplex.com/assets/files/assets-ff6bd873ecd07b49c86faf3c7aab82d2.zip -Outfile ./assets.zip
+Expand-Archive ./assets.zip -DestinationPath ./

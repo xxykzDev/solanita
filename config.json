@@ -1,0 +1,27 @@
+{
+  "number": 6,
+  "symbol": "EPIX",
+  "sellerFeeBasisPoints": 500,
+  "isMutable": true,
+  "isSequential": false,
+  "creators": [
+    {
+      "address": "ByBzm6ENfMJYjzSLbocjAHvQUBZesw5ztEZG15nEJn8F",
+      "share": 100
+    }
+  ],
+  "uploadMethod": "bundlr",
+  "awsConfig": null,
+  "nftStorageAuthToken": null,
+  "shdwStorageAccount": null,
+  "pinataConfig": null,
+  "hiddenSettings": null,
+  "guards": {
+    "default": {
+      "solPayment": {
+        "value": 0.1,
+        "destination": "ByBzm6ENfMJYjzSLbocjAHvQUBZesw5ztEZG15nEJn8F"
+      }
+    }
+  }
+}
